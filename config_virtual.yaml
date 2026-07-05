@@ -1,0 +1,29 @@
+mode: virtual
+simulation_mode: false
+
+base_url: "https://openapivts.koreainvestment.com:29443"
+
+app_key: "한국투자 내 ID"
+app_secret: "한국투자 패스워드"
+cano: "cono 번호..."
+acnt_prdt_cd: "01"
+
+# RSI 매수 조건
+rsi_buy_min: 35
+rsi_buy_max: 57
+
+# 한 번 매수할 금액
+default_buy_amount: 1000000
+
+stocks:
+  - code: "005930"
+    name: "삼성전자"
+    buy_amount: 2000000
+    stop_loss: 2.0
+    take_profit: 5.0
+
+  - code: "000660"
+    name: "SK하이닉스"
+    buy_amount: 2000000
+    stop_loss: 2.5
+    take_profit: 5.0
